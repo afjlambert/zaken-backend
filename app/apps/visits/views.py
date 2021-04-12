@@ -14,4 +14,4 @@ class VisitViewSet(GenericViewSet, CreateModelMixin, ListModelMixin):
 
     def create(self, request):
         print(request.data)
-        super().create(request)
+        return super().create(request)
